@@ -1,0 +1,9 @@
+npm install @clerk/nextjs @uploadthing/react mongoose svix uploadthing tailwindcss-animate @clerk/themes
+clerk dashboard有 API KEY，middleware用來protect MERN_App
+shadcn 自製控制面板 裝shadcn時可能會被蓋掉global.css與tailwind.config
+npx shadcn-ui@latest init  
+npx shadcn-ui@latest add form
+next.js會保護讀取外部資料 需到next.config配置host
+uploadthing docs查看文件如何交互，照著app route，API reference操作，改寫core.ts實際操作的auth
+透過user.action.ts替代route直接與db交互
+3:42
