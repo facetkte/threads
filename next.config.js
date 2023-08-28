@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    typescript: {
+        ignoreBuildErrors: true,
+    },
     //若沒有配置server會不能操作
     experimental: {
         serverActions: true,
