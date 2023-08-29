@@ -32,6 +32,15 @@ export async function createThread({ text, author, communityId, path }: Params) 
             $push: { threads: createdThread._id },
         });
 
+        if (communityIdObject) {
+            // Update Community model
+            await Community.findByIdAndUpdate(communityIdObject, {
+                $push: { threads: createdThread._id },
+            });
+        }
+
+        revalidatePath(path);
+
 
     }
     catch (err: any) {

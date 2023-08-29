@@ -14,8 +14,6 @@ async function Page({ params }: { params: { id: string } }) {
     if (!user) return null;
 
     const communityDetails = await fetchCommunityDetails(params.id);
-    console.log(communityDetails);
-
 
     return (
         <section>
@@ -71,7 +69,7 @@ async function Page({ params }: { params: { id: string } }) {
                             ))}
                         </section>
                     </TabsContent>
-                    <TabsContent value="threads" className="w-full text-light-1">
+                    <TabsContent value="requests" className="w-full text-light-1">
                         <ThreadsTab
                             currentUserId={user.id}
                             accountId={communityDetails._id}

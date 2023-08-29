@@ -9,3 +9,4 @@ uploadthing docs查看文件如何交互，照著app route，API reference操作
 透過user.action.ts替代route直接與db交互
 ctrlk+0 縮排
 vercel建專案 .env須貼到environment variables
+5:30 community未顯示
